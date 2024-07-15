@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 SOLDA ELETRÔNICA | Tópico Especiais em Eletrônica</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 SOLDA ELETRÔNICA | Tópico Especiais em Eletrônica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 SOLDA ELETRÔNICA | Tópico Especiais em Eletrônica" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Ryan Da Costa Sousa - 202033940007" />
+
+
+<meta name="date" content="2024-07-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="fresadora-big-fresa.html"/>
+<link rel="next" href="circuito-impresso-pcb.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> INTRODUÇÃO</a></li>
+<li class="chapter" data-level="2" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html"><i class="fa fa-check"></i><b>2</b> PROCESSO DE IMPRESSÃO 3D</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#filamentos"><i class="fa fa-check"></i><b>2.1</b> Filamentos</a></li>
+<li class="chapter" data-level="2.2" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#funcionamento-da-impressora-3d"><i class="fa fa-check"></i><b>2.2</b> funcionamento da Impressora 3D</a></li>
+<li class="chapter" data-level="2.3" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#modelagem-3d"><i class="fa fa-check"></i><b>2.3</b> Modelagem 3D</a></li>
+<li class="chapter" data-level="2.4" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#fatiamento"><i class="fa fa-check"></i><b>2.4</b> Fatiamento</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html"><i class="fa fa-check"></i><b>3</b> CORTE E GRAVAÇÃO A LASER</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html#desenho-2d"><i class="fa fa-check"></i><b>3.1</b> Desenho 2D</a></li>
+<li class="chapter" data-level="3.2" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html#funcionamento-do-laser"><i class="fa fa-check"></i><b>3.2</b> Funcionamento do laser</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html"><i class="fa fa-check"></i><b>4</b> FRESADORA (BIG FRESA)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html#funcionamento-da-big-fresa"><i class="fa fa-check"></i><b>4.1</b> Funcionamento da Big Fresa</a></li>
+<li class="chapter" data-level="4.2" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html#desenho-e-controle-da-big-fresa"><i class="fa fa-check"></i><b>4.2</b> Desenho e Controle da Big Fresa</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="solda-eletrônica.html"><a href="solda-eletrônica.html"><i class="fa fa-check"></i><b>5</b> SOLDA ELETRÔNICA</a></li>
+<li class="chapter" data-level="6" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html"><i class="fa fa-check"></i><b>6</b> CIRCUITO IMPRESSO (PCB)</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#projeto-do-circuito-impresso"><i class="fa fa-check"></i><b>6.1</b> Projeto do Circuito Impresso</a></li>
+<li class="chapter" data-level="6.2" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#fabricação-por-corrosão"><i class="fa fa-check"></i><b>6.2</b> Fabricação por Corrosão</a></li>
+<li class="chapter" data-level="6.3" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#fabricação-por-usinagem"><i class="fa fa-check"></i><b>6.3</b> Fabricação por Usinagem</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="plotter.html"><a href="plotter.html"><i class="fa fa-check"></i><b>7</b> PLOTTER</a></li>
+<li class="chapter" data-level="8" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html"><i class="fa fa-check"></i><b>8</b> PROGRAMAÇÃO EM ARDUINO</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html#tipos-de-arduino"><i class="fa fa-check"></i><b>8.1</b> Tipos de Arduino:</a></li>
+<li class="chapter" data-level="8.2" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html#funcionamento-das-portas"><i class="fa fa-check"></i><b>8.2</b> Funcionamento das Portas:</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="projeto-final.html"><a href="projeto-final.html"><i class="fa fa-check"></i><b>9</b> PROJETO FINAL</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="projeto-final.html"><a href="projeto-final.html#planejamento-e-conceito"><i class="fa fa-check"></i><b>9.1</b> Planejamento e Conceito:</a></li>
+<li class="chapter" data-level="9.2" data-path="projeto-final.html"><a href="projeto-final.html#montagem-e-testes-na-protoboard"><i class="fa fa-check"></i><b>9.2</b> Montagem e Testes na Protoboard:</a></li>
+<li class="chapter" data-level="9.3" data-path="projeto-final.html"><a href="projeto-final.html#explicação-do-código"><i class="fa fa-check"></i><b>9.3</b> Explicação do Código:</a></li>
+<li class="chapter" data-level="9.4" data-path="projeto-final.html"><a href="projeto-final.html#funcionamento-do-jogo"><i class="fa fa-check"></i><b>9.4</b> Funcionamento do Jogo:</a></li>
+<li class="chapter" data-level="9.5" data-path="projeto-final.html"><a href="projeto-final.html#idealização-do-produto-final"><i class="fa fa-check"></i><b>9.5</b> Idealização do produto final</a></li>
+<li class="chapter" data-level="9.6" data-path="projeto-final.html"><a href="projeto-final.html#projeto-do-circuito-impresso-pcb"><i class="fa fa-check"></i><b>9.6</b> Projeto do Circuito Impresso (PCB):</a></li>
+<li class="chapter" data-level="9.7" data-path="projeto-final.html"><a href="projeto-final.html#fabricação-do-circuito-impresso"><i class="fa fa-check"></i><b>9.7</b> Fabricação do Circuito Impresso:</a></li>
+<li class="chapter" data-level="9.8" data-path="projeto-final.html"><a href="projeto-final.html#montagem-e-soldagem-da-pcb"><i class="fa fa-check"></i><b>9.8</b> Montagem e Soldagem da PCB:</a></li>
+<li class="chapter" data-level="9.9" data-path="projeto-final.html"><a href="projeto-final.html#design-da-caixa"><i class="fa fa-check"></i><b>9.9</b> Design da Caixa:</a></li>
+<li class="chapter" data-level="9.10" data-path="projeto-final.html"><a href="projeto-final.html#montagem-final"><i class="fa fa-check"></i><b>9.10</b> Montagem Final:</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="conclusão.html"><a href="conclusão.html"><i class="fa fa-check"></i><b>10</b> CONCLUSÃO</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Tópico Especiais em Eletrônica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="solda-eletrônica" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> SOLDA ELETRÔNICA<a href="solda-eletrônica.html#solda-eletrônica" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Como monitor da disciplina, eu ensinei os alunos a soldar componentes eletrônicos e a fazer retrabalho. No laboratório, temos equipamentos de qualidade para isso, como ferros de solda, bancadas e uma estação de solda e retrabalho. Essa estação é super útil, com um ferro de solda que permite ajustar a temperatura com precisão através de um potenciômetro; e também contar com um soprador térmico com controle de temperatura e velocidade do ar.</p>
+<p><img src="17.jpg" style="display:block; margin:0 auto;;width:60.0%" /></p>
+<center>
+Fig 17: Estação de solda e retrabalho.
+</center>
+<p>A soldagem eletrônica une componentes como circuitos integrados, resistores, capacitores, diodos, conectores e outros dispositivos a placas de circuito impresso (PCBs) ou outros substratos. Esse processo cria conexões elétricas e mecânicas que fazem os circuitos funcionarem corretamente. A técnica utiliza um material de solda que é fundido sob calor e, em seguida, solidificado, formando uma junção sólida entre os componentes e os substratos.</p>
+<p>Usamos componentes do tipo PTH (Pin Through Hole), que são soldados do outro lado da placa. Eles são mais fáceis de soldar, mas ocupam mais espaço. A solda é feita com estanho, um elemento químico muito usado na eletrônica. Quando o estanho entra em contato com o ferro de solda aquecido, ele derrete e depois endurece, fixando o componente na placa.</p>
+<p>No final, pedi para os alunos removerem componentes de uma placa inutilizável e depois soldarem novamente, usando a estação de solda e retrabalho. Ensinei o manuseio correto e seguro das ferramentas, já que tanto o ferro de solda quanto o soprador térmico podem atingir altas temperaturas, suficientes para derreter o estanho, que funde a cerca de 230 °C. Alguns alunos também foram instruídos a fazer furos e soldar em circuitos impressos sem máscara, o que torna o processo um pouco mais complicado, já que a solda pode se espalhar mais facilmente.</p>
+<p><img src="18.jpg" style="display:block; margin:0 auto;;width:50.0%" /></p>
+<center>
+Fig 18: Soldando componentes eletrônicos.
+</center>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="fresadora-big-fresa.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="circuito-impresso-pcb.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 PROCESSO DE IMPRESSÃO 3D | Tópico Especiais em Eletrônica</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 PROCESSO DE IMPRESSÃO 3D | Tópico Especiais em Eletrônica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 PROCESSO DE IMPRESSÃO 3D | Tópico Especiais em Eletrônica" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Ryan Da Costa Sousa - 202033940007" />
+
+
+<meta name="date" content="2024-07-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="corte-e-gravação-a-laser.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> INTRODUÇÃO</a></li>
+<li class="chapter" data-level="2" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html"><i class="fa fa-check"></i><b>2</b> PROCESSO DE IMPRESSÃO 3D</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#filamentos"><i class="fa fa-check"></i><b>2.1</b> Filamentos</a></li>
+<li class="chapter" data-level="2.2" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#funcionamento-da-impressora-3d"><i class="fa fa-check"></i><b>2.2</b> funcionamento da Impressora 3D</a></li>
+<li class="chapter" data-level="2.3" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#modelagem-3d"><i class="fa fa-check"></i><b>2.3</b> Modelagem 3D</a></li>
+<li class="chapter" data-level="2.4" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#fatiamento"><i class="fa fa-check"></i><b>2.4</b> Fatiamento</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html"><i class="fa fa-check"></i><b>3</b> CORTE E GRAVAÇÃO A LASER</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html#desenho-2d"><i class="fa fa-check"></i><b>3.1</b> Desenho 2D</a></li>
+<li class="chapter" data-level="3.2" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html#funcionamento-do-laser"><i class="fa fa-check"></i><b>3.2</b> Funcionamento do laser</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html"><i class="fa fa-check"></i><b>4</b> FRESADORA (BIG FRESA)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html#funcionamento-da-big-fresa"><i class="fa fa-check"></i><b>4.1</b> Funcionamento da Big Fresa</a></li>
+<li class="chapter" data-level="4.2" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html#desenho-e-controle-da-big-fresa"><i class="fa fa-check"></i><b>4.2</b> Desenho e Controle da Big Fresa</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="solda-eletrônica.html"><a href="solda-eletrônica.html"><i class="fa fa-check"></i><b>5</b> SOLDA ELETRÔNICA</a></li>
+<li class="chapter" data-level="6" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html"><i class="fa fa-check"></i><b>6</b> CIRCUITO IMPRESSO (PCB)</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#projeto-do-circuito-impresso"><i class="fa fa-check"></i><b>6.1</b> Projeto do Circuito Impresso</a></li>
+<li class="chapter" data-level="6.2" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#fabricação-por-corrosão"><i class="fa fa-check"></i><b>6.2</b> Fabricação por Corrosão</a></li>
+<li class="chapter" data-level="6.3" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#fabricação-por-usinagem"><i class="fa fa-check"></i><b>6.3</b> Fabricação por Usinagem</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="plotter.html"><a href="plotter.html"><i class="fa fa-check"></i><b>7</b> PLOTTER</a></li>
+<li class="chapter" data-level="8" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html"><i class="fa fa-check"></i><b>8</b> PROGRAMAÇÃO EM ARDUINO</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html#tipos-de-arduino"><i class="fa fa-check"></i><b>8.1</b> Tipos de Arduino:</a></li>
+<li class="chapter" data-level="8.2" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html#funcionamento-das-portas"><i class="fa fa-check"></i><b>8.2</b> Funcionamento das Portas:</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="projeto-final.html"><a href="projeto-final.html"><i class="fa fa-check"></i><b>9</b> PROJETO FINAL</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="projeto-final.html"><a href="projeto-final.html#planejamento-e-conceito"><i class="fa fa-check"></i><b>9.1</b> Planejamento e Conceito:</a></li>
+<li class="chapter" data-level="9.2" data-path="projeto-final.html"><a href="projeto-final.html#montagem-e-testes-na-protoboard"><i class="fa fa-check"></i><b>9.2</b> Montagem e Testes na Protoboard:</a></li>
+<li class="chapter" data-level="9.3" data-path="projeto-final.html"><a href="projeto-final.html#explicação-do-código"><i class="fa fa-check"></i><b>9.3</b> Explicação do Código:</a></li>
+<li class="chapter" data-level="9.4" data-path="projeto-final.html"><a href="projeto-final.html#funcionamento-do-jogo"><i class="fa fa-check"></i><b>9.4</b> Funcionamento do Jogo:</a></li>
+<li class="chapter" data-level="9.5" data-path="projeto-final.html"><a href="projeto-final.html#idealização-do-produto-final"><i class="fa fa-check"></i><b>9.5</b> Idealização do produto final</a></li>
+<li class="chapter" data-level="9.6" data-path="projeto-final.html"><a href="projeto-final.html#projeto-do-circuito-impresso-pcb"><i class="fa fa-check"></i><b>9.6</b> Projeto do Circuito Impresso (PCB):</a></li>
+<li class="chapter" data-level="9.7" data-path="projeto-final.html"><a href="projeto-final.html#fabricação-do-circuito-impresso"><i class="fa fa-check"></i><b>9.7</b> Fabricação do Circuito Impresso:</a></li>
+<li class="chapter" data-level="9.8" data-path="projeto-final.html"><a href="projeto-final.html#montagem-e-soldagem-da-pcb"><i class="fa fa-check"></i><b>9.8</b> Montagem e Soldagem da PCB:</a></li>
+<li class="chapter" data-level="9.9" data-path="projeto-final.html"><a href="projeto-final.html#design-da-caixa"><i class="fa fa-check"></i><b>9.9</b> Design da Caixa:</a></li>
+<li class="chapter" data-level="9.10" data-path="projeto-final.html"><a href="projeto-final.html#montagem-final"><i class="fa fa-check"></i><b>9.10</b> Montagem Final:</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="conclusão.html"><a href="conclusão.html"><i class="fa fa-check"></i><b>10</b> CONCLUSÃO</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Tópico Especiais em Eletrônica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="processo-de-impressão-3d" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> PROCESSO DE IMPRESSÃO 3D<a href="processo-de-impressão-3d.html#processo-de-impressão-3d" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>As primeiras máquinas que foram apresentadas foram as impressoras 3D, especificamente os modelos Creality Ender 3 disponíveis no laboratório. As impressoras 3D são máquinas CNC que fabricam objetos tridimensionais através do método aditivo, ou seja, constroem o objeto adicionando material camada por camada. Para isso, é necessário ter o arquivo digital do objeto desejado no formato G-code, que é a linguagem de máquina para várias CNCs, incluindo esses modelos de impressoras.</p>
+<p><img src="2.jpg" style="display:block; margin:0 auto;;width:40.0%" /></p>
+<center>
+Fig 2: Impressora Creality Ender 3.
+</center>
+<div id="filamentos" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Filamentos<a href="processo-de-impressão-3d.html#filamentos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Na fabricação de objetos através do processo de impressão 3D, são utilizados alguns tipos de plásticos chamados filamentos. Existem diversos tipos de filamentos, sendo os mais utilizados o PLA, ABS, PETG, TPU e PET.</p>
+<p>PLA: O mais utilizado no FABLAB, é popular e fácil de trabalhar. Feito a partir de fontes renováveis, o PLA é um material de fácil impressão, ideal para impressoras abertas ou fechadas, com ou sem mesa aquecida, e não emite gases tóxicos.</p>
+<p>ABS: Derivado do petróleo, é bastante utilizado na indústria. É resistente a altas temperaturas e impactos, com visual opaco. Recomenda-se usar em impressoras fechadas, pois pode liberar gases prejudiciais à saúde.</p>
+<p>PETG: Um material mais resistente que o PLA, também não emite gases tóxicos e pode ser usado em impressoras abertas ou fechadas.</p>
+<p>TPU: Ideal para objetos flexíveis e resistentes ao impacto, semelhante a borracha.</p>
+<p>PET: Feito de garrafas PET, oferece o benefício da reciclagem e é economicamente viável. No FABLAB, há uma extrusora de garrafa PET e uma impressora separada exclusivamente para este filamento, que é bastante resistente a impactos, umidade e temperatura.</p>
+<p><img src="3.jpeg" style="display:block; margin:0 auto;;width:45.0%" /></p>
+<center>
+Fig 3: Exemplos de filamentos.
+</center>
+</div>
+<div id="funcionamento-da-impressora-3d" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> funcionamento da Impressora 3D<a href="processo-de-impressão-3d.html#funcionamento-da-impressora-3d" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Os modelos de impressoras 3D no FABLAB funcionam com base em quatro motores de passo: três responsáveis pelos eixos X, Y e Z, e um para puxar o filamento.</p>
+<p><img src="4.jpg" style="display:block; margin:0 auto;;width:40.0%" /></p>
+<center>
+Fig 4: Motor de passo.
+</center>
+<p>Eixo X: Movimenta da esquerda para a direita através de um sistema de correia, onde está acoplada a extrusora, que contém o hotend, sensores de temperatura, cooler de refrigeração e o bico da impressora. O hotend aquece o filamento à temperatura ideal, tornando-o maleável para a modelagem do objeto.</p>
+<p>O diâmetro do bico influencia na qualidade e no tempo da impressão, com os principais bicos usados no laboratório tendo diâmetros de 0,2 mm, 0,4 mm, 0,5 mm e 0,8 mm.</p>
+<p><img src="5.png" style="display:block; margin:0 auto;;width:40.0%" /></p>
+<center>
+Fig 5: Bicos para impressoras 3D.
+</center>
+<p>Eixo Y: Movimenta a mesa da impressora, que na mesa contém uma resistência para aquecimento, melhorando a fixação do objeto durante a impressão.</p>
+<p>Eixo Z: O Motor do eixo Z é acoplado a um fuso, que é responsável pelo movimento para cima e para baixo da impressora, mas durante o processo de impressão, o eixo Z só se movimenta apenas para cima, evitando que bata na peça, começando da origem do eixo e vai subindo camada pro camada.</p>
+<p>Para maquina ter a referência de posicionamento, cuja é suma importância, é utilizado sensores de fim de curso mecânicos, de modo que eles representam as origens de cada eixo. A interface desse tipo de impressora é feita através de um botão rotativo e um display, de modo que controlar a máquina.</p>
+<p><img src="6.png" style="display:block; margin:0 auto;;width:50.0%" /></p>
+<center>
+Fig 6: Painel da impressora Creality Ender 3.
+</center>
+<p>O arquivo digital pode ser passado de duas maneiras, sendo uma através de cartão de memória e posteriormente o processo é iniciado através da interface da impressora ou controlada diretamente pelo computador via cabo.</p>
+</div>
+<div id="modelagem-3d" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Modelagem 3D<a href="processo-de-impressão-3d.html#modelagem-3d" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A modelagem 3D é basicamente transformar o desenho de um objeto em uma representação digital tridimensional. No FABLAB, os softwares CAD (Computer Aided Design) mais usados para modelagens 3D são o Fusion 360 e o SolidWorks, que são bem parecidos na forma de usar. Geralmente, a modelagem começa com o desenvolvimento do desenho em 2D e depois se faz a extrusão do objeto para transformá-lo em 3D. Em seguida, são feitos os ajustes necessários na peça.</p>
+<p>A dificuldade desse processo depende diretamente da complexidade da peça a ser desenvolvida. No geral, esses dois softwares são bem intuitivos e têm uma capacidade de desenvolvimento muito grande, permitindo criar desde peças simples até as mais complexas.</p>
+<p><img src="7.png" style="display:block; margin:0 auto;;width:60.0%" /></p>
+<center>
+Fig 7: Softwares para modelagem 3D.
+</center>
+</div>
+<div id="fatiamento" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Fatiamento<a href="processo-de-impressão-3d.html#fatiamento" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Depois de modelar um objeto em 3D, para imprimi-lo é necessário fazer o fatiamento. Isso significa pegar a geometria do modelo e transformá-la em instruções que a máquina CNC entende, ou seja, o arquivo G-code. O primeiro passo é exportar o arquivo do software de modelagem 3D no formato STL (Standard Tessellation Language). Em seguida, utilizamos outro software para fazer o
+fatiamento, no caso o UltiMaker Cura. Para usar o Cura corretamente, é importante adicionar o modelo da impressora que será utilizado, pois isso garante que os parâmetros, como área de trabalho, temperatura e velocidade máxima, estejam corretos.</p>
+<p>Depois, configuramos o diâmetro do bico da impressora e o tipo de filamento a ser usado. A seguir, ajustamos os parâmetros da impressão. Primeiro, definimos a qualidade de resolução da peça, que basicamente é a altura de cada camada; quanto mais fina a camada, melhor a qualidade, mas o tempo de impressão será maior. Também ajustamos a espessura das paredes, da base e do topo da peça.</p>
+<p>O próximo passo é escolher o tipo de preenchimento e a densidade do material, que é dada em porcentagem: 0% significa uma peça oca e 100% uma peça maciça. Depois, ajustamos a temperatura do bico e da mesa da impressora, que varia conforme o tipo de filamento, e a velocidade da impressão. Um parâmetro importante é a existência de suporte, que depende da forma do objeto e de como ele está posicionado na mesa; o suporte é necessário em peça onde o percurso do bico iria depositar material no ar.</p>
+<p>Após configurar tudo, basta apertar o botão para fazer o fatiamento, que gera o arquivo G-code. Esse arquivo pode ser passado para a impressora via cartão de memória ou diretamente pelo computador.</p>
+<p><img src="8.png" style="display:block; margin:0 auto;;width:60.0%" /></p>
+<center>
+Fig 8: Exemplo de fatiamento.
+</center>
+<p>Como membro do FABLAB e monitor da disciplina, ajudei os demais alunos a fazerem suas impressões, utilizando as máquinas corretamente e fazendo o fatiamento adequado para cada impressão. Para agilizar o processo, foi recomendado eles utilizarem o site Thingiverse, onde há muitos arquivos prontos de objetos 3D disponíveis para download no formato STL. Também é essencial nivelar a mesa da impressora para garantir uma boa qualidade na impressão, usando uma folha de papel para ajustar a distância entre a mesa e o bico quando o eixo Z está na origem. O nivelamento é feito através de quatro parafusos localizados nos cantos da mesa.</p>
+<p><img src="9.png" style="display:block; margin:0 auto;;width:60.0%" /></p>
+<center>
+Fig 9: Mesa da impressora 3D.
+</center>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="corte-e-gravação-a-laser.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

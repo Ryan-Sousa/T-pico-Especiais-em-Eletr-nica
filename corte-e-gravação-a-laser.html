@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 CORTE E GRAVAÇÃO A LASER | Tópico Especiais em Eletrônica</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 CORTE E GRAVAÇÃO A LASER | Tópico Especiais em Eletrônica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 CORTE E GRAVAÇÃO A LASER | Tópico Especiais em Eletrônica" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Ryan Da Costa Sousa - 202033940007" />
+
+
+<meta name="date" content="2024-07-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="processo-de-impressão-3d.html"/>
+<link rel="next" href="fresadora-big-fresa.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> INTRODUÇÃO</a></li>
+<li class="chapter" data-level="2" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html"><i class="fa fa-check"></i><b>2</b> PROCESSO DE IMPRESSÃO 3D</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#filamentos"><i class="fa fa-check"></i><b>2.1</b> Filamentos</a></li>
+<li class="chapter" data-level="2.2" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#funcionamento-da-impressora-3d"><i class="fa fa-check"></i><b>2.2</b> funcionamento da Impressora 3D</a></li>
+<li class="chapter" data-level="2.3" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#modelagem-3d"><i class="fa fa-check"></i><b>2.3</b> Modelagem 3D</a></li>
+<li class="chapter" data-level="2.4" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#fatiamento"><i class="fa fa-check"></i><b>2.4</b> Fatiamento</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html"><i class="fa fa-check"></i><b>3</b> CORTE E GRAVAÇÃO A LASER</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html#desenho-2d"><i class="fa fa-check"></i><b>3.1</b> Desenho 2D</a></li>
+<li class="chapter" data-level="3.2" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html#funcionamento-do-laser"><i class="fa fa-check"></i><b>3.2</b> Funcionamento do laser</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html"><i class="fa fa-check"></i><b>4</b> FRESADORA (BIG FRESA)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html#funcionamento-da-big-fresa"><i class="fa fa-check"></i><b>4.1</b> Funcionamento da Big Fresa</a></li>
+<li class="chapter" data-level="4.2" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html#desenho-e-controle-da-big-fresa"><i class="fa fa-check"></i><b>4.2</b> Desenho e Controle da Big Fresa</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="solda-eletrônica.html"><a href="solda-eletrônica.html"><i class="fa fa-check"></i><b>5</b> SOLDA ELETRÔNICA</a></li>
+<li class="chapter" data-level="6" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html"><i class="fa fa-check"></i><b>6</b> CIRCUITO IMPRESSO (PCB)</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#projeto-do-circuito-impresso"><i class="fa fa-check"></i><b>6.1</b> Projeto do Circuito Impresso</a></li>
+<li class="chapter" data-level="6.2" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#fabricação-por-corrosão"><i class="fa fa-check"></i><b>6.2</b> Fabricação por Corrosão</a></li>
+<li class="chapter" data-level="6.3" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#fabricação-por-usinagem"><i class="fa fa-check"></i><b>6.3</b> Fabricação por Usinagem</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="plotter.html"><a href="plotter.html"><i class="fa fa-check"></i><b>7</b> PLOTTER</a></li>
+<li class="chapter" data-level="8" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html"><i class="fa fa-check"></i><b>8</b> PROGRAMAÇÃO EM ARDUINO</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html#tipos-de-arduino"><i class="fa fa-check"></i><b>8.1</b> Tipos de Arduino:</a></li>
+<li class="chapter" data-level="8.2" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html#funcionamento-das-portas"><i class="fa fa-check"></i><b>8.2</b> Funcionamento das Portas:</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="projeto-final.html"><a href="projeto-final.html"><i class="fa fa-check"></i><b>9</b> PROJETO FINAL</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="projeto-final.html"><a href="projeto-final.html#planejamento-e-conceito"><i class="fa fa-check"></i><b>9.1</b> Planejamento e Conceito:</a></li>
+<li class="chapter" data-level="9.2" data-path="projeto-final.html"><a href="projeto-final.html#montagem-e-testes-na-protoboard"><i class="fa fa-check"></i><b>9.2</b> Montagem e Testes na Protoboard:</a></li>
+<li class="chapter" data-level="9.3" data-path="projeto-final.html"><a href="projeto-final.html#explicação-do-código"><i class="fa fa-check"></i><b>9.3</b> Explicação do Código:</a></li>
+<li class="chapter" data-level="9.4" data-path="projeto-final.html"><a href="projeto-final.html#funcionamento-do-jogo"><i class="fa fa-check"></i><b>9.4</b> Funcionamento do Jogo:</a></li>
+<li class="chapter" data-level="9.5" data-path="projeto-final.html"><a href="projeto-final.html#idealização-do-produto-final"><i class="fa fa-check"></i><b>9.5</b> Idealização do produto final</a></li>
+<li class="chapter" data-level="9.6" data-path="projeto-final.html"><a href="projeto-final.html#projeto-do-circuito-impresso-pcb"><i class="fa fa-check"></i><b>9.6</b> Projeto do Circuito Impresso (PCB):</a></li>
+<li class="chapter" data-level="9.7" data-path="projeto-final.html"><a href="projeto-final.html#fabricação-do-circuito-impresso"><i class="fa fa-check"></i><b>9.7</b> Fabricação do Circuito Impresso:</a></li>
+<li class="chapter" data-level="9.8" data-path="projeto-final.html"><a href="projeto-final.html#montagem-e-soldagem-da-pcb"><i class="fa fa-check"></i><b>9.8</b> Montagem e Soldagem da PCB:</a></li>
+<li class="chapter" data-level="9.9" data-path="projeto-final.html"><a href="projeto-final.html#design-da-caixa"><i class="fa fa-check"></i><b>9.9</b> Design da Caixa:</a></li>
+<li class="chapter" data-level="9.10" data-path="projeto-final.html"><a href="projeto-final.html#montagem-final"><i class="fa fa-check"></i><b>9.10</b> Montagem Final:</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="conclusão.html"><a href="conclusão.html"><i class="fa fa-check"></i><b>10</b> CONCLUSÃO</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Tópico Especiais em Eletrônica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="corte-e-gravação-a-laser" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> CORTE E GRAVAÇÃO A LASER<a href="corte-e-gravação-a-laser.html#corte-e-gravação-a-laser" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>A próxima máquina apresentada para os alunos foi a Router Laser CNC VS6040, com potência de 60 W. Ela realiza corte e gravação em vários tipos de materiais, possuindo uma ampla área de utilização. No FABLAB, os materiais mais utilizados são o acrílico, papelão, MDF e outros tipos de madeira.</p>
+<p><img src="10.jpg" style="display:block; margin:0 auto;;width:60.0%" /></p>
+<center>
+Fig 10: Máquina Router Laser.
+</center>
+<div id="desenho-2d" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Desenho 2D<a href="corte-e-gravação-a-laser.html#desenho-2d" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para realizar cortes e gravações na router laser, é necessário ter um desenho em 2D, vetorizado no formato SVG (Scalable Vector Graphics). Existem vários softwares capazes de criar desenhos vetorizados, mas os principais utilizados no FABLAB são o Inkscape e o CorelDRAW. A comunicação entre o computador e a máquina é feita pelo software K40 Whisperer, que é bem simples de usar. Ele é baseado em três operações, associadas às cores da paleta RGB: preto para gravação (raster engrave), vermelho para corte (vector cut) e azul para gravação em linhas (vector engrave). No software de desenho, é preciso especificar essas cores para obter o produto desejado, onde a cor preta (gravação) é preenchida e as cores vermelha e azul (corte e gravação em linhas) são contornos.</p>
+</div>
+<div id="funcionamento-do-laser" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Funcionamento do laser<a href="corte-e-gravação-a-laser.html#funcionamento-do-laser" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Essa máquina também se movimenta através de motores de passo acoplados a um sistema de correia. São dois motores, um para o eixo X e outro para o eixo Y, fazendo com que seja considerada uma máquina em duas dimensões. Há também um terceiro motor, responsável por ajustar a altura do material em relação ao bico do laser. Esse ajuste é feito através de um gabarito, que garante que a distância do bico ao material permita que o feixe do laser seja o mais fino possível, proporcionando um melhor acabamento.</p>
+<p>O laser é gerado na parte de trás da máquina, através de um tubo de CO2. O feixe do laser é direcionado por meio de três espelhos até chegar ao bico do laser, também chamado de canhão, que está acoplado ao eixo X. Dentro do canhão há uma lente que foca os feixes em uma área menor.</p>
+<p><img src="11.jpg" style="display:block; margin:0 auto;;width:60.0%" /></p>
+<center>
+Fig 11: Canhão do laser.
+</center>
+<p>O tubo do laser é resfriado por um sistema de bombeamento de água, e é importante monitorar a temperatura do laser e da água de resfriamento. Durante a operação, o laser emite bastante fumaça. Por isso, há um exaustor na parte inferior da máquina, conectado a uma tubulação que expulsa a fumaça para fora do laboratório.</p>
+<p>A máquina possui um painel relativamente simples, com uma chave para ligar e desligar, um botão de emergência que desliga completamente, dois botões para descer ou subir a mesa, um botão para ligar a lâmpada interna e outro para ligar ou desligar o exaustor. Há também um controle de potência do laser, ajustável conforme o material e a ação desejada, seja corte ou gravação. A velocidade de cada ação é controlada pelo software K40 Whisperer.</p>
+<p><img src="12.jpg" style="display:block; margin:0 auto;;width:40.0%" /></p>
+<center>
+Fig 12: Painel do laser.
+</center>
+<p><img src="13.jpg" style="display:block; margin:0 auto;;width:60.0%" /></p>
+<center>
+Fig 13: Mesa do laser.
+</center>
+<p>Depois da explicação teórica pelo professor, ajudei os alunos a projetarem e fabricarem um exemplo prático para usar o laser. A maioria optou por criar caixas, utilizando o site MakerCase, que facilita o design de vários tipos de caixas de maneira simples e rápida. Posteriormente, os alunos fizeram personalizações usando o Inkscape. Instrui-os sobre o uso correto e seguro do laser, já que a máquina tem um grau de perigosidade que pode causar acidentes. No final, foi uma atividade produtiva, e a maioria compreendeu bem todo o processo.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="processo-de-impressão-3d.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="fresadora-big-fresa.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

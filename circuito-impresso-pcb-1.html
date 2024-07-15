@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 CIRCUITO IMPRESSO (PCB) | Tópico Especiais em Eletrônica</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 CIRCUITO IMPRESSO (PCB) | Tópico Especiais em Eletrônica" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 CIRCUITO IMPRESSO (PCB) | Tópico Especiais em Eletrônica" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Ryan Da Costa Sousa - 202033940007" />
+
+
+<meta name="date" content="2024-07-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="circuito-impresso-pcb.html"/>
+<link rel="next" href="plotter.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução</a></li>
+<li class="chapter" data-level="2" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html"><i class="fa fa-check"></i><b>2</b> PROCESSO DE IMPRESSÃO 3D</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#filamentos"><i class="fa fa-check"></i><b>2.1</b> Filamentos</a></li>
+<li class="chapter" data-level="2.2" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#funcionamento-da-impressora-3d"><i class="fa fa-check"></i><b>2.2</b> funcionamento da Impressora 3D</a></li>
+<li class="chapter" data-level="2.3" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#modelagem-3d"><i class="fa fa-check"></i><b>2.3</b> Modelagem 3D</a></li>
+<li class="chapter" data-level="2.4" data-path="processo-de-impressão-3d.html"><a href="processo-de-impressão-3d.html#fatiamento"><i class="fa fa-check"></i><b>2.4</b> Fatiamento</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html"><i class="fa fa-check"></i><b>3</b> CORTE E GRAVAÇÃO A LASER</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html#desenho-2d"><i class="fa fa-check"></i><b>3.1</b> Desenho 2D</a></li>
+<li class="chapter" data-level="3.2" data-path="corte-e-gravação-a-laser.html"><a href="corte-e-gravação-a-laser.html#funcionamento-do-laser"><i class="fa fa-check"></i><b>3.2</b> Funcionamento do laser</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html"><i class="fa fa-check"></i><b>4</b> FRESADORA (BIG FRESA)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html#funcionamento-da-big-fresa"><i class="fa fa-check"></i><b>4.1</b> Funcionamento da Big Fresa</a></li>
+<li class="chapter" data-level="4.2" data-path="fresadora-big-fresa.html"><a href="fresadora-big-fresa.html#desenho-e-controle-da-big-fresa"><i class="fa fa-check"></i><b>4.2</b> Desenho e Controle da Big Fresa</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="solda-eletrônica.html"><a href="solda-eletrônica.html"><i class="fa fa-check"></i><b>5</b> SOLDA ELETRÔNICA</a></li>
+<li class="chapter" data-level="6" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html"><i class="fa fa-check"></i><b>6</b> CIRCUITO IMPRESSO (PCB)</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#projeto-do-circuito-impresso"><i class="fa fa-check"></i><b>6.1</b> Projeto do Circuito Impresso</a></li>
+<li class="chapter" data-level="6.2" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#fabricação-por-corrosão"><i class="fa fa-check"></i><b>6.2</b> Fabricação por Corrosão</a></li>
+<li class="chapter" data-level="6.3" data-path="circuito-impresso-pcb.html"><a href="circuito-impresso-pcb.html#fabricação-por-usinagem"><i class="fa fa-check"></i><b>6.3</b> Fabricação por Usinagem</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="circuito-impresso-pcb-1.html"><a href="circuito-impresso-pcb-1.html"><i class="fa fa-check"></i><b>7</b> CIRCUITO IMPRESSO (PCB)</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="circuito-impresso-pcb-1.html"><a href="circuito-impresso-pcb-1.html#projeto-do-circuito-impresso-1"><i class="fa fa-check"></i><b>7.1</b> Projeto do Circuito Impresso</a></li>
+<li class="chapter" data-level="7.2" data-path="circuito-impresso-pcb-1.html"><a href="circuito-impresso-pcb-1.html#fabricação-por-corrosão-1"><i class="fa fa-check"></i><b>7.2</b> Fabricação por Corrosão</a></li>
+<li class="chapter" data-level="7.3" data-path="circuito-impresso-pcb-1.html"><a href="circuito-impresso-pcb-1.html#fabricação-por-usinagem-1"><i class="fa fa-check"></i><b>7.3</b> Fabricação por Usinagem</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="plotter.html"><a href="plotter.html"><i class="fa fa-check"></i><b>8</b> PLOTTER</a></li>
+<li class="chapter" data-level="9" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html"><i class="fa fa-check"></i><b>9</b> PROGRAMAÇÃO EM ARDUINO</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html#tipos-de-arduino"><i class="fa fa-check"></i><b>9.1</b> Tipos de Arduino:</a></li>
+<li class="chapter" data-level="9.2" data-path="programação-em-arduino.html"><a href="programação-em-arduino.html#funcionamento-das-portas"><i class="fa fa-check"></i><b>9.2</b> Funcionamento das Portas:</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="programação-em-arduino-1.html"><a href="programação-em-arduino-1.html"><i class="fa fa-check"></i><b>10</b> PROGRAMAÇÃO EM ARDUINO</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="programação-em-arduino-1.html"><a href="programação-em-arduino-1.html#tipos-de-arduino-1"><i class="fa fa-check"></i><b>10.1</b> Tipos de Arduino:</a></li>
+<li class="chapter" data-level="10.2" data-path="programação-em-arduino-1.html"><a href="programação-em-arduino-1.html#funcionamento-das-portas-1"><i class="fa fa-check"></i><b>10.2</b> Funcionamento das Portas:</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="projeto-final.html"><a href="projeto-final.html"><i class="fa fa-check"></i><b>11</b> PROJETO FINAL</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="projeto-final.html"><a href="projeto-final.html#etapas-do-projeto"><i class="fa fa-check"></i><b>11.1</b> Etapas do Projeto</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="projeto-final.html"><a href="projeto-final.html#planejamento-e-conceito"><i class="fa fa-check"></i><b>11.1.1</b> Planejamento e Conceito:</a></li>
+<li class="chapter" data-level="11.1.2" data-path="projeto-final.html"><a href="projeto-final.html#explicação-do-código"><i class="fa fa-check"></i><b>11.1.2</b> Explicação do Código:</a></li>
+<li class="chapter" data-level="11.1.3" data-path="projeto-final.html"><a href="projeto-final.html#funcionamento-do-jogo"><i class="fa fa-check"></i><b>11.1.3</b> Funcionamento do Jogo:</a></li>
+<li class="chapter" data-level="11.1.4" data-path="projeto-final.html"><a href="projeto-final.html#idealização-do-produto-final"><i class="fa fa-check"></i><b>11.1.4</b> Idealização do produto final</a></li>
+<li class="chapter" data-level="11.1.5" data-path="projeto-final.html"><a href="projeto-final.html#projeto-do-circuito-impresso-pcb"><i class="fa fa-check"></i><b>11.1.5</b> Projeto do Circuito Impresso (PCB):</a></li>
+<li class="chapter" data-level="11.1.6" data-path="projeto-final.html"><a href="projeto-final.html#fabricação-do-circuito-impresso"><i class="fa fa-check"></i><b>11.1.6</b> Fabricação do Circuito Impresso:</a></li>
+<li class="chapter" data-level="11.1.7" data-path="projeto-final.html"><a href="projeto-final.html#montagem-e-soldagem-da-pcb"><i class="fa fa-check"></i><b>11.1.7</b> Montagem e Soldagem da PCB:</a></li>
+<li class="chapter" data-level="11.1.8" data-path="projeto-final.html"><a href="projeto-final.html#design-da-caixa"><i class="fa fa-check"></i><b>11.1.8</b> Design da Caixa:</a></li>
+<li class="chapter" data-level="11.1.9" data-path="projeto-final.html"><a href="projeto-final.html#montagem-final"><i class="fa fa-check"></i><b>11.1.9</b> Montagem Final:</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="conclusão.html"><a href="conclusão.html"><i class="fa fa-check"></i><b>12</b> CONCLUSÃO</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Tópico Especiais em Eletrônica</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="circuito-impresso-pcb-1" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapter 7</span> CIRCUITO IMPRESSO (PCB)<a href="circuito-impresso-pcb-1.html#circuito-impresso-pcb-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>O projeto e a fabricação de circuitos impressos são essenciais em projetos eletrônicos. O uso da PCB (Placa de Circuito Impresso) traz várias vantagens. Em primeiro lugar, elas garantem a integridade e a confiabilidade do circuito, minimizando o risco de mau contato e falhas intermitentes que podem ocorrer com conexões feitas por jumpers e protoboards. Isso é crucial em projetos que exigem alta confiabilidade e estabilidade operacional.</p>
+<p>Além disso, uma PCB bem projetada e fabricada melhora significativamente a estética e a organização do projeto. Componentes dispostos de maneira ordenada e trilhas claramente definidas contribuem para uma montagem mais limpa e profissional. Isso também facilita a manutenção e a modificação do circuito, pois cada componente e conexão está claramente identificado.</p>
+<p>No FABLAB, usamos placas de fenolite como material base. Esse material é eletricamente isolante e possui uma camada de cobre na superfície, que conduzirá a eletricidade. Existem dois métodos principais de fabricação de PCBs no laboratório: corrosão e usinagem. Mas, antes de qualquer coisa, é necessário fazer o projeto da PCB.</p>
+<div id="projeto-do-circuito-impresso-1" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Projeto do Circuito Impresso<a href="circuito-impresso-pcb-1.html#projeto-do-circuito-impresso-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Há várias maneiras de projetar uma PCB, mas utilizamos o site EasyEDA por ser prático e permitir trabalho em equipe. Ele possui uma vasta biblioteca de componentes, facilitando o processo de design. O primeiro passo é criar o diagrama do circuito, garantindo que todos os componentes e conexões estejam corretos. Este diagrama serve como base para a etapa seguinte.</p>
+<p>Depois de elaborar o diagrama, passamos para a criação do layout da PCB. Nesta fase, ajustamos as dimensões reais dos componentes e posicionamos cada um deles para evitar que as linhas guia (que representam as trilhas de conexão) se cruzem. Em seguida, escolhemos a largura das trilhas e se o circuito será na parte superior (Top Layer) ou inferior (Bottom Layer). Depois de conectar os componentes com as trilhas, o projeto da PCB está pronto. O formato do arquivo exportado dependerá do método de fabricação que será utilizado.</p>
+</div>
+<div id="fabricação-por-corrosão-1" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Fabricação por Corrosão<a href="circuito-impresso-pcb-1.html#fabricação-por-corrosão-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O processo de corrosão é mais simples e barato, mas gera resíduos ácidos que precisam ser descartados corretamente. Para demonstrar esse método na aula, fiz um exemplo de circuito utilizando a corrosão. Para produzir a placa, primeiro é necessário exportar o arquivo da PCB no EasyEDA no formato SVG. Esse arquivo é então editado em um software de desenho 2D, como o Inkscape, para obter o negativo da placa, que será gravado a laser.</p>
+<p>O próximo passo é cobrir a placa com um material adesivo, como vinil. O laser grava as bordas das trilhas, delineando o contorno delas. Após essa etapa, destacamos os adesivos, deixando apenas as partes das trilhas cobertas, pois o adesivo protegerá essas áreas durante a corrosão.</p>
+<p>Para preparar a solução de corrosão, colocamos a placa em um recipiente plástico e adicionamos água até cobrir a placa. Em seguida, retiramos a placa e medimos a quantidade de água no recipiente. A proporção para a solução é de 1 g de percloreto de ferro para cada 4 g de água. Adicionamos o percloreto de ferro à água e misturamos bem.</p>
+<p>Com a solução pronta, submergimos a placa e agitamos constantemente para acelerar o processo de corrosão. O ácido corroerá todo o cobre não protegido pelo vinil, deixando apenas as trilhas intactas. Quando o processo estiver completo, lavamos a placa e descartamos a solução corretamente.</p>
+<p>Depois disso, retiramos os adesivos das trilhas e perfuramos a placa nos locais necessários. Por fim, soldamos os componentes na PCB, completando o circuito. Embora esse método seja econômico e fácil, é importante manusear os materiais com cuidado e descartar os resíduos de maneira adequada para evitar danos ambientais.</p>
+<p><img src="19.jpeg" style="display:block; margin:0 auto;;width:60.0%" /></p>
+<center>
+Fig 19: Exemplo de corrosão.
+</center>
+</div>
+<div id="fabricação-por-usinagem-1" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Fabricação por Usinagem<a href="circuito-impresso-pcb-1.html#fabricação-por-usinagem-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Outro método para fabricar circuitos impressos é através da usinagem. No FABLAB, usamos a CNC fresadora 3018, conhecida como Mini Fresa, que também funciona por processo subtrativo. Seu funcionamento é bem parecido com o da Big Fresa, mas com uma área de trabalho menor e um spindle de menor potência. A Mini Fresa é especialmente focada na produção de PCBs. Infelizmente, ela não foi apresentada para os alunos na disciplina, pois estava em manutenção.</p>
+<p><img src="20.jpg" style="display:block; margin:0 auto;;width:60.0%" /></p>
+<center>
+Fig 20: Mini fresa.
+</center>
+<p>Para começar a fabricação por usinagem, o primeiro passo é gerar os arquivos Gerber no EasyEDA. Esse processo é bem simples: com o projeto pronto, basta usar a função “gerar Gerber”. Depois, utilizamos o software FlatCam para definir todos os parâmetros necessários para a fabricação. Normalmente, escolhemos três ações que geram três G-codes diferentes: um para as trilhas, um para os furos e outro para o corte das bordas do circuito. Para cada ação, é preciso definir parâmetros como o tipo de fresa a ser usada, a profundidade de corte, a velocidade de movimentação, a quantidade de passadas, entre outros.</p>
+<p>O controle da Mini Fresa é feito pelo software Candle GRBL, que é bem parecido com o UGS usado na Big Fresa. Ambos os softwares podem controlar os dois tipos de fresadoras. Antes de iniciar o trabalho, escolhemos a fresa apropriada e definimos a origem da área de trabalho. O Candle realiza um mapeamento de alturas da área de trabalho para ajustar a altura da fresa em relação ao material, utilizando o princípio de continuidade elétrica para essa medição.</p>
+<p>Uma vez configurado, o processo de usinagem começa. Cada vez que um arquivo Gerber é trocado, é necessário substituir a fresa correspondente. Esse método é mais caro e demorado, mas tem a vantagem de não gerar resíduos tóxicos. Por outro lado, ele gera bastante pó, o que requer cuidados adicionais para manter o ambiente limpo.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="circuito-impresso-pcb.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="plotter.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/05.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

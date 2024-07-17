@@ -22,7 +22,6 @@ funcionamento-das-portas
 projeto-final
 planejamento-e-conceito
 montagem-e-testes-na-protoboard
-explicação-do-código
 funcionamento-do-jogo
 idealização-do-produto-final
 projeto-do-circuito-impresso-pcb

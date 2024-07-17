@@ -80,7 +80,7 @@
 
 \title{Tópico Especiais em Eletrônica}
 \author{Ryan Da Costa Sousa - 202033940007}
-\date{2024-07-15}
+\date{2024-07-17}
 
 \begin{document}
 \maketitle
@@ -129,7 +129,7 @@ PET: Feito de garrafas PET, oferece o benefício da reciclagem e é economicamen
 
 Fig 3: Exemplos de filamentos.
 
-\section{funcionamento da Impressora 3D}\label{funcionamento-da-impressora-3d}
+\section{Funcionamento da Impressora 3D}\label{funcionamento-da-impressora-3d}
 
 Os modelos de impressoras 3D no FABLAB funcionam com base em quatro motores de passo: três responsáveis pelos eixos X, Y e Z, e um para puxar o filamento.
 
@@ -139,7 +139,7 @@ Fig 4: Motor de passo.
 
 Eixo X: Movimenta da esquerda para a direita através de um sistema de correia, onde está acoplada a extrusora, que contém o hotend, sensores de temperatura, cooler de refrigeração e o bico da impressora. O hotend aquece o filamento à temperatura ideal, tornando-o maleável para a modelagem do objeto.
 
-O diâmetro do bico influencia na qualidade e no tempo da impressão, com os principais bicos usados no laboratório tendo diâmetros de 0,2 mm, 0,4 mm, 0,5 mm e 0,8 mm.
+O diâmetro do bico da impressora está diretamente ligado com a qualidade e com o tempo da impressão; quanto menor o bico maior será a qualidade da peça, mas o processo de impressão é mais demorado, pois a quantidade de material depositado por vez será menor. Pelo o outro lado, quando maior bico, menor a qualidade e mais rápido a impressão. Sendo que os principais bicos utilizados no laboratório são com os diâmetros de 0,2 mm; 0,4 mm; 0,5 mm e 0,8 mm.
 
 \includegraphics[width=0.4\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/5.png}
 
@@ -149,7 +149,7 @@ Eixo Y: Movimenta a mesa da impressora, que na mesa contém uma resistência par
 
 Eixo Z: O Motor do eixo Z é acoplado a um fuso, que é responsável pelo movimento para cima e para baixo da impressora, mas durante o processo de impressão, o eixo Z só se movimenta apenas para cima, evitando que bata na peça, começando da origem do eixo e vai subindo camada pro camada.
 
-Para maquina ter a referência de posicionamento, cuja é suma importância, é utilizado sensores de fim de curso mecânicos, de modo que eles representam as origens de cada eixo. A interface desse tipo de impressora é feita através de um botão rotativo e um display, de modo que controlar a máquina.
+Para máquina ter a referência de posicionamento, cuja é suma importância, é utilizado sensores de fim de curso mecânicos, de modo que eles representam as origens de cada eixo. A interface desse tipo de impressora é feita através de um botão rotativo e um display, de modo que controla a máquina.
 
 \includegraphics[width=0.5\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/6.png}
 
@@ -161,7 +161,7 @@ O arquivo digital pode ser passado de duas maneiras, sendo uma através de cart�
 
 A modelagem 3D é basicamente transformar o desenho de um objeto em uma representação digital tridimensional. No FABLAB, os softwares CAD (Computer Aided Design) mais usados para modelagens 3D são o Fusion 360 e o SolidWorks, que são bem parecidos na forma de usar. Geralmente, a modelagem começa com o desenvolvimento do desenho em 2D e depois se faz a extrusão do objeto para transformá-lo em 3D. Em seguida, são feitos os ajustes necessários na peça.
 
-A dificuldade desse processo depende diretamente da complexidade da peça a ser desenvolvida. No geral, esses dois softwares são bem intuitivos e têm uma capacidade de desenvolvimento muito grande, permitindo criar desde peças simples até as mais complexas.
+A dificuldade do processo de modelagem 3D depende diretamente da complexidade da peça a ser desenvolvida. No geral, esses dois softwares são bem intuitivos e têm uma capacidade de desenvolvimento muito grande, permitindo criar desde peças simples até as mais complexas.
 
 \includegraphics[width=0.6\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/7.png}
 
@@ -169,12 +169,11 @@ Fig 7: Softwares para modelagem 3D.
 
 \section{Fatiamento}\label{fatiamento}
 
-Depois de modelar um objeto em 3D, para imprimi-lo é necessário fazer o fatiamento. Isso significa pegar a geometria do modelo e transformá-la em instruções que a máquina CNC entende, ou seja, o arquivo G-code. O primeiro passo é exportar o arquivo do software de modelagem 3D no formato STL (Standard Tessellation Language). Em seguida, utilizamos outro software para fazer o
-fatiamento, no caso o UltiMaker Cura. Para usar o Cura corretamente, é importante adicionar o modelo da impressora que será utilizado, pois isso garante que os parâmetros, como área de trabalho, temperatura e velocidade máxima, estejam corretos.
+Depois de modelar um objeto em 3D, para imprimi-lo é necessário fazer o fatiamento. Isso significa pegar a geometria do modelo 3D e transformá-la em instruções que a máquina CNC entende, ou seja, o arquivo G-code. O primeiro passo é exportar o arquivo, feito no software de modelagem 3D, para o formato STL (Standard Tessellation Language). Em seguida, utilizamos outro software para fazer o fatiamento, no caso o UltiMaker Cura. Para usar o Cura corretamente, é importante adicionar o modelo da impressora que será utilizado, pois isso garante que os parâmetros, como área de trabalho, temperatura e velocidade máxima, estejam corretos.
 
-Depois, configuramos o diâmetro do bico da impressora e o tipo de filamento a ser usado. A seguir, ajustamos os parâmetros da impressão. Primeiro, definimos a qualidade de resolução da peça, que basicamente é a altura de cada camada; quanto mais fina a camada, melhor a qualidade, mas o tempo de impressão será maior. Também ajustamos a espessura das paredes, da base e do topo da peça.
+Depois, configuramos o diâmetro do bico da impressora e o tipo de filamento a ser usado. A seguir, ajustamos os parâmetros da impressão. Primeiro, definimos a qualidade da resolução da peça, que basicamente é a altura de cada camada; quanto mais fina a camada, melhor a qualidade, mas o tempo de impressão será maior. Também ajustamos a espessura das paredes, da base e do topo da peça.
 
-O próximo passo é escolher o tipo de preenchimento e a densidade do material, que é dada em porcentagem: 0\% significa uma peça oca e 100\% uma peça maciça. Depois, ajustamos a temperatura do bico e da mesa da impressora, que varia conforme o tipo de filamento, e a velocidade da impressão. Um parâmetro importante é a existência de suporte, que depende da forma do objeto e de como ele está posicionado na mesa; o suporte é necessário em peça onde o percurso do bico iria depositar material no ar.
+O próximo passo é escolher o tipo de preenchimento e a densidade dele, que é dada em porcentagem: 0\% significa uma peça oca e 100\% uma peça maciça. Depois, ajustamos a temperatura do bico e da mesa da impressora, que varia conforme o tipo de filamento, e a velocidade da impressão. Um parâmetro importante é a existência de suporte, que depende da forma do objeto e de como ele está posicionado na mesa; o suporte é necessário em peça onde o percurso do bico iria depositar material no ar.
 
 Após configurar tudo, basta apertar o botão para fazer o fatiamento, que gera o arquivo G-code. Esse arquivo pode ser passado para a impressora via cartão de memória ou diretamente pelo computador.
 
@@ -182,7 +181,7 @@ Após configurar tudo, basta apertar o botão para fazer o fatiamento, que gera 
 
 Fig 8: Exemplo de fatiamento.
 
-Como membro do FABLAB e monitor da disciplina, ajudei os demais alunos a fazerem suas impressões, utilizando as máquinas corretamente e fazendo o fatiamento adequado para cada impressão. Para agilizar o processo, foi recomendado eles utilizarem o site Thingiverse, onde há muitos arquivos prontos de objetos 3D disponíveis para download no formato STL. Também é essencial nivelar a mesa da impressora para garantir uma boa qualidade na impressão, usando uma folha de papel para ajustar a distância entre a mesa e o bico quando o eixo Z está na origem. O nivelamento é feito através de quatro parafusos localizados nos cantos da mesa.
+Como membro do FABLAB e monitor da disciplina, ajudei os demais alunos a fazerem suas impressões, utilizando as máquinas corretamente e fazendo o fatiamento adequado para cada impressão. Para agilizar o processo, foi recomendado eles utilizarem o site Thingiverse, onde há muitos arquivos prontos de objetos 3D disponíveis para download no formato STL. Também é essencial nivelar a mesa da impressora para garantir uma boa qualidade na impressão, usando uma folha de papel para ajustar a distância entre a mesa e o bico, quando o eixo Z está na origem. O nivelamento é feito através de quatro parafusos localizados nos cantos da mesa.
 
 \includegraphics[width=0.6\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/9.png}
 
@@ -226,7 +225,7 @@ Depois da explicação teórica pelo professor, ajudei os alunos a projetarem e 
 
 \chapter{FRESADORA (BIG FRESA)}\label{fresadora-big-fresa}
 
-Outra máquina que foi apresentada é a fresadora, conhecida por Big Fresa. Ela é uma CNC que realiza o processo de usinagem e é capaz de fabricar peças tridimensionais de vários tipos. No FABLAB, o principal material usado na Big Fresa é a madeira. O processo é subtrativo, o que significa que você começa com um bloco de material e a máquina vai removendo partes até chegar na peça desejada. Ela é a uma máquina com grande área de trabalho, o que permite criar peças grandes e complexas. Como toda CNC, a Big Fresa oferece alta precisão, gerando peças de excelente qualidade, especialmente quando a máquina está bem calibrada.
+Outra máquina que foi apresentada é a fresadora, conhecida por Big Fresa. Ela é uma CNC que realiza o processo de usinagem e é capaz de fabricar peças tridimensionais de vários tipos. No FABLAB, o principal material usado na Big Fresa é a madeira. O processo é subtrativo, o que significa que você começa com um bloco de material e a máquina vai removendo partes até chegar na peça desejada. Ela é a uma máquina com uma boa área de trabalho, o que permite criar vários tipos de peças. Como toda CNC, a Big Fresa oferece alta precisão, gerando peças de excelente qualidade, especialmente quando a máquina está bem calibrada.
 
 \includegraphics[width=0.5\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/14.jpeg}
 
@@ -258,7 +257,7 @@ O controle da Big Fresa é feito pelo software UGS (Universal G-code Sender). Co
 
 \chapter{SOLDA ELETRÔNICA}\label{solda-eletruxf4nica}
 
-Como monitor da disciplina, eu ensinei os alunos a soldar componentes eletrônicos e a fazer retrabalho. No laboratório, temos equipamentos de qualidade para isso, como ferros de solda, bancadas e uma estação de solda e retrabalho. Essa estação é super útil, com um ferro de solda que permite ajustar a temperatura com precisão através de um potenciômetro; e também contar com um soprador térmico com controle de temperatura e velocidade do ar.
+Como monitor da disciplina, eu ensinei os alunos a soldar componentes eletrônicos e fazer retrabalho. No laboratório, temos equipamentos de qualidade para isso, como ferros de solda, bancadas e uma estação de solda e retrabalho. Essa estação é super útil, com um ferro de solda que permite ajustar a temperatura com precisão através de um potenciômetro; e também contar com um soprador térmico com controle de temperatura e velocidade do ar.
 
 \includegraphics[width=0.6\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/17.jpg}
 
@@ -276,9 +275,9 @@ Fig 18: Soldando componentes eletrônicos.
 
 \chapter{CIRCUITO IMPRESSO (PCB)}\label{circuito-impresso-pcb}
 
-O projeto e a fabricação de circuitos impressos são essenciais em projetos eletrônicos. O uso da PCB (Placa de Circuito Impresso) traz várias vantagens. Em primeiro lugar, elas garantem a integridade e a confiabilidade do circuito, minimizando o risco de mau contato e falhas intermitentes que podem ocorrer com conexões feitas por jumpers e protoboards. Isso é crucial em projetos que exigem alta confiabilidade e estabilidade operacional.
+O projeto e a fabricação de circuitos impressos são essenciais em projetos eletrônicos. O uso da PCB (Placa de Circuito Impresso) traz várias vantagens. Em primeiro lugar, elas garantem a integridade e a confiabilidade do circuito, minimizando o risco de mau contato e falhas intermitentes que podem ocorrer com conexões feitas por jumpers (fios de conexão) e protoboard (matriz de contato). Isso é crucial em projetos que exigem alta confiabilidade e estabilidade operacional.
 
-Além disso, uma PCB bem projetada e fabricada melhora significativamente a estética e a organização do projeto. Componentes dispostos de maneira ordenada e trilhas claramente definidas contribuem para uma montagem mais limpa e profissional. Isso também facilita a manutenção e a modificação do circuito, pois cada componente e conexão está claramente identificado.
+Além disso, uma PCB bem projetada e fabricada melhora significativamente a estética e a organização do projeto. Componentes dispostos de maneira ordenada e trilhas claramente definidas contribuem para uma montagem mais limpa e profissional. Isso também facilita a análise e a manutenção do circuito, pois os componentes e as conexões são identificadas mais facilmente.
 
 No FABLAB, usamos placas de fenolite como material base. Esse material é eletricamente isolante e possui uma camada de cobre na superfície, que conduzirá a eletricidade. Existem dois métodos principais de fabricação de PCBs no laboratório: corrosão e usinagem. Mas, antes de qualquer coisa, é necessário fazer o projeto da PCB.
 
@@ -286,17 +285,17 @@ No FABLAB, usamos placas de fenolite como material base. Esse material é eletri
 
 Há várias maneiras de projetar uma PCB, mas utilizamos o site EasyEDA por ser prático e permitir trabalho em equipe. Ele possui uma vasta biblioteca de componentes, facilitando o processo de design. O primeiro passo é criar o diagrama do circuito, garantindo que todos os componentes e conexões estejam corretos. Este diagrama serve como base para a etapa seguinte.
 
-Depois de elaborar o diagrama, passamos para a criação do layout da PCB. Nesta fase, ajustamos as dimensões reais dos componentes e posicionamos cada um deles para evitar que as linhas guia (que representam as trilhas de conexão) se cruzem. Em seguida, escolhemos a largura das trilhas e se o circuito será na parte superior (Top Layer) ou inferior (Bottom Layer). Depois de conectar os componentes com as trilhas, o projeto da PCB está pronto. O formato do arquivo exportado dependerá do método de fabricação que será utilizado.
+Depois de elaborar o diagrama, passamos para a criação do layout da PCB; nessa parte vamos ter as dimensões reais dos componentes, aí o próximo passo é fazer o arranjo da posição de cada componente, evitando que as linhas guia (que representam as trilhas de conexão) se cruzem. Em seguida, escolhemos a largura das trilhas e se o circuito será na parte superior (Top Layer) ou inferior (Bottom Layer). Depois de conectar os componentes com as trilhas, o projeto da PCB está pronto. O formato do arquivo exportado dependerá do método de fabricação que será utilizado.
 
 \section{Fabricação por Corrosão}\label{fabricauxe7uxe3o-por-corrosuxe3o}
 
-O processo de corrosão é mais simples e barato, mas gera resíduos ácidos que precisam ser descartados corretamente. Para demonstrar esse método na aula, fiz um exemplo de circuito utilizando a corrosão. Para produzir a placa, primeiro é necessário exportar o arquivo da PCB no EasyEDA no formato SVG. Esse arquivo é então editado em um software de desenho 2D, como o Inkscape, para obter o negativo da placa, que será gravado a laser.
+O processo de corrosão é mais simples e barato, mas gera resíduos ácidos que precisam ser descartados corretamente. Para demonstrar esse método na aula, fiz um exemplo de circuito utilizando a corrosão. Para produzir a placa, primeiro é necessário exportar o arquivo da PCB no EasyEDA no formato SVG. Esse arquivo é então editado em um software de desenho 2D, como o Inkscape, para obter o contorno das trilhas, que será gravado a laser.
 
-O próximo passo é cobrir a placa com um material adesivo, como vinil. O laser grava as bordas das trilhas, delineando o contorno delas. Após essa etapa, destacamos os adesivos, deixando apenas as partes das trilhas cobertas, pois o adesivo protegerá essas áreas durante a corrosão.
+O próximo passo é cobrir a placa com um material adesivo, como vinil. O laser grava as bordas das trilhas, delineando o contorno delas. Após essa etapa, destacamos os adesivos, deixando apenas as partes das trilhas cobertas, pois o adesivo protege essas áreas durante a corrosão.
 
 Para preparar a solução de corrosão, colocamos a placa em um recipiente plástico e adicionamos água até cobrir a placa. Em seguida, retiramos a placa e medimos a quantidade de água no recipiente. A proporção para a solução é de 1 g de percloreto de ferro para cada 4 g de água. Adicionamos o percloreto de ferro à água e misturamos bem.
 
-Com a solução pronta, submergimos a placa e agitamos constantemente para acelerar o processo de corrosão. O ácido corroerá todo o cobre não protegido pelo vinil, deixando apenas as trilhas intactas. Quando o processo estiver completo, lavamos a placa e descartamos a solução corretamente.
+Com a solução pronta, submergimos a placa e agitamos constantemente para acelerar o processo de corrosão. O ácido corroerá todo o cobre não protegido pelo vinil, deixando apenas as trilhas intactas. Quando o processo foi concluído, lavamos a placa e descartamos a solução corretamente.
 
 Depois disso, retiramos os adesivos das trilhas e perfuramos a placa nos locais necessários. Por fim, soldamos os componentes na PCB, completando o circuito. Embora esse método seja econômico e fácil, é importante manusear os materiais com cuidado e descartar os resíduos de maneira adequada para evitar danos ambientais.
 
@@ -316,7 +315,7 @@ Para começar a fabricação por usinagem, o primeiro passo é gerar os arquivos
 
 O controle da Mini Fresa é feito pelo software Candle GRBL, que é bem parecido com o UGS usado na Big Fresa. Ambos os softwares podem controlar os dois tipos de fresadoras. Antes de iniciar o trabalho, escolhemos a fresa apropriada e definimos a origem da área de trabalho. O Candle realiza um mapeamento de alturas da área de trabalho para ajustar a altura da fresa em relação ao material, utilizando o princípio de continuidade elétrica para essa medição.
 
-Uma vez configurado, o processo de usinagem começa. Cada vez que um arquivo Gerber é trocado, é necessário substituir a fresa correspondente. Esse método é mais caro e demorado, mas tem a vantagem de não gerar resíduos tóxicos. Por outro lado, ele gera bastante pó, o que requer cuidados adicionais para manter o ambiente limpo.
+Uma vez configurado, o processo de usinagem começa. Cada vez que um arquivo G-code é trocado, é necessário substituir a fresa correspondente. Esse método é mais caro e demorado, mas tem a vantagem de não gerar resíduos tóxicos. Por outro lado, ele gera bastante pó, o que requer cuidados adicionais para manter o ambiente limpo.
 
 \chapter{PLOTTER}\label{plotter}
 
@@ -364,13 +363,13 @@ Também foi apresentada a IDE do Arduino, que é a interface onde você escreve,
 
 \chapter{PROJETO FINAL}\label{projeto-final}
 
-Meu projeto final foi inspirado no clássico jogo Genius, que desafia os jogadores a memorizarem sequências de cores e sons. Originalmente, o jogo possuía botões coloridos que emitiam sons harmônicos e se iluminavam em sequência, e a tarefa era repetir essa sequência sem cometer erros. A segui temos as etapas do projeto.
+Meu projeto final foi inspirado no clássico jogo Genius, que desafia os jogadores a memorizarem sequências de cores e sons. Originalmente, o jogo possuía botões coloridos que emitiam sons harmônicos e se iluminavam em sequência, e a tarefa era repetir essa sequência sem cometer erro. A segui temos as etapas do projeto.
 
-\section{Planejamento e Conceito:}\label{planejamento-e-conceito}
+\section{Planejamento e Conceito}\label{planejamento-e-conceito}
 
-Para começar, estudei como o jogo funcionava. Com base nos materiais disponíveis, decidi usar um Arduino Nano para controlar tudo. Optei por quatro botões, cada um com um LED de cor correspondente, e um buzzer para os sons. O buzzer foi escolhido por sua capacidade de alterar o som pela sua frequência, o que permite controlar os tons através do Arduino.
+Para começar, foi necessário estudar como o jogo funcionava. Com base nos materiais disponíveis, foi decidido usar um Arduino Nano para fazer controle. Foi feita a escolha por quatro botões, cada um com um LED de cor diferente, e um buzzer para os sons. O buzzer foi escolhido por sua capacidade de alterar o som pela sua frequência, o que permite controlar os tons através do Arduino.
 
-\section{Montagem e Testes na Protoboard:}\label{montagem-e-testes-na-protoboard}
+\section{Montagem e Testes na Protoboard}\label{montagem-e-testes-na-protoboard}
 
 A primeira etapa foi montar e testar o circuito na protoboard. Isso facilitou a montagem inicial do circuito, possibilitando ajustes e testes conforme avançava no projeto.
 
@@ -378,29 +377,7 @@ A primeira etapa foi montar e testar o circuito na protoboard. Isso facilitou a 
 
 Fig 23: Circuito na Protoboard.
 
-\section{Explicação do Código:}\label{explicauxe7uxe3o-do-cuxf3digo}
-
-Definição de Notas e Melodia: No início do código, são definidas as notas musicais que serão usadas na melodia do jogo. Cada nota tem um valor associado que representa sua frequência sonora e uma duração que indica por quanto tempo ela deve ser tocada.
-
-Setup() - Configuração Inicial:
-
-A função setup() é responsável por configurar o ambiente inicial do jogo.
-
-Inicia a comunicação serial para debug (Serial.begin(9600)).
-
-Gera uma semente aleatória para gerar a sequência de cores e sons (randomSeed(analogRead(0))).
-
-Define os pinos dos LEDs e do buzzer como saídas (pinMode()).
-
-Em seguida, reproduz a melodia definida no início do jogo usando o buzzer, tocando cada nota na sequência.
-
-Loop() - Execução Contínua:
-
-O loop principal (loop()) do programa continua executando repetidamente enquanto o Arduino estiver ligado.
-
-Dentro deste loop, o código verifica constantemente as ações do jogador e controla a sequência de LEDs e sons para o jogo.
-
-\section{Funcionamento do Jogo:}\label{funcionamento-do-jogo}
+\section{Funcionamento do Jogo}\label{funcionamento-do-jogo}
 
 Geração da Sequência: Uma sequência aleatória de LEDs é gerada e mostrada para o jogador através de piscadas e sons correspondentes.
 
@@ -418,9 +395,9 @@ Após conseguir fazer o circuito funcionar e finalizar o código, o próximo pas
 
 A ideia central foi criar uma caixa para o jogo. Na parte superior da caixa, seria colocada uma superfície onde os botões poderiam ser pressionados. Cada botão seria acompanhado por dois LEDs, totalizando 8 LEDs de 4 cores diferentes. O Arduino ficaria na parte inferior da caixa, alimentado por uma bateria de 9 volts.
 
-Para manter os botões separados da placa principal do Arduino e reduzir a necessidade de muitos jumpers (fios de conexão), foi necessário criar um circuito para cada botão. Cada circuito incluiu os dois LEDs associados ao botão, além de dois resistores separados, um para os LEDs e outro para o botão.
+Para manter os botões separados da placa principal do Arduino e reduzir a necessidade de muitos jumpers, foi necessário criar um circuito para cada botão. Cada circuito incluiu os dois LEDs associados ao botão, além de dois resistores separados, um para os LEDs e outro para o botão.
 
-\section{Projeto do Circuito Impresso (PCB):}\label{projeto-do-circuito-impresso-pcb}
+\section{Projeto do Circuito Impresso (PCB)}\label{projeto-do-circuito-impresso-pcb}
 
 Após isso foi necessário fazer o diagrama das conexões elétricas no EasyEDA, de modo para fazer o circuito impresso.
 
@@ -428,7 +405,7 @@ Após isso foi necessário fazer o diagrama das conexões elétricas no EasyEDA,
 
 Fig 24: Esquemático elétrico.
 
-Depois de finalizar o diagrama das conexões elétricas no EasyEDA, o próximo passo foi transformá-lo em um projeto de circuito impresso (PCB). Uma das principais dificuldades foi organizar os componentes de forma compacta e eficiente para facilitar as interconexões. Isso foi crucial para garantir que o circuito funcionasse corretamente e ocupasse o menor espaço possível na placa.
+Depois de finalizar o diagrama das conexões elétricas no EasyEDA, o próximo passo foi transformá-lo em um projeto de circuito impresso. Uma das principais dificuldades foi organizar os componentes de forma compacta e eficiente para facilitar as interconexões. Isso foi crucial para garantir que o circuito funcionasse corretamente e ocupasse o menor espaço possível na placa.
 Após planejar a disposição dos componentes, foi feita a conexão das trilhas e o layout final da placa, como mostrado na figura a seguir.
 
 \includegraphics[width=0.4\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/24.png}
@@ -441,11 +418,11 @@ No EasyEDA também é possível obter um a visualização do circuito em 3D, com
 
 Fig 26: Representação da PCB em 3D.
 
-\section{Fabricação do Circuito Impresso:}\label{fabricauxe7uxe3o-do-circuito-impresso}
+\section{Fabricação do Circuito Impresso}\label{fabricauxe7uxe3o-do-circuito-impresso}
 
-Para fazer a fabricação das placas eu optei por fazer através do método de corrosão, pois a fresadora 3018 ainda estava em fase de manutenção. Então para isso foi necessário exporta o arquivo em SVG, e abrir ele no Inkscape, fazendo as devidas configurações, colocando o contorno nas trilhas, para que o laser passasse. Após isso foi cortado pedaços de fenolites cobreados na superfície, e colocado o vinil adesivo; e posteriormente levado ao laser para destacar as trilhas das placas, utilizando o laser com uma potência de 8\%. No final obtive as placas e destaquei o vinil onde foi cortado e deixei só a parte das trilhas.
+Para fazer a fabricação das placas eu optei por fazer através do método de corrosão, pois a fresadora 3018 ainda estava em fase de manutenção. Então para isso foi necessário exporta o arquivo em SVG, e abrir ele no Inkscape, fazendo as devidas configurações, colocando o contorno nas trilhas, para que o laser passasse. Após isso foi utilizado pedaços de placa de fenolites cobreadas, e colocado o vinil adesivo; e posteriormente levado ao laser para passar nos cortonos das trilhas, utilizando o laser com uma potência de 8\%. No final obtive as placas e destaquei o vinil onde foi cortado e deixei só a parte das trilhas.
 
-Depois disso preparei a solução para corrosão, utilizando percloreto de ferro e água, sendo na proporção de 1 para 4 respectivamente, de maneira obtiver as placas de circuitos impresso.
+Depois disso preparei a solução para corrosão, utilizando percloreto de ferro e água, sendo na proporção de 1 para 4 respectivamente, de maneira que obtive as placas de circuitos impresso.
 
 \includegraphics[width=0.4\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/26.jpg}
 
@@ -457,7 +434,7 @@ A próxima etapa foi pegar as placas e fazer os furos de maneira manual aonde v�
 
 Fig 28: PCBs furadas.
 
-\section{Montagem e Soldagem da PCB:}\label{montagem-e-soldagem-da-pcb}
+\section{Montagem e Soldagem da PCB}\label{montagem-e-soldagem-da-pcb}
 
 Soldar os componentes eletrônicos foi a próxima etapa. Realizei testes de continuidade para detectar possíveis erros, como mau contato. Na imagem, estou mostrando o processo de soldagem dos componentes e as cinco placas já finalizadas.
 
@@ -469,13 +446,13 @@ Fig 29: Soldado os componentes.
 
 Fig 30: Circuito montado.
 
-Em seguida, conectei as cinco placas entre si e à placa principal, que é alimentada por uma bateria de 9 volts e possui uma chave liga/desliga. Testei todas as conexões e ajustei o código conforme necessário, garantindo que tudo funcionasse perfeitamente.
+Em seguida, fiz a ligação entre as cinco placas, sendo o sistema alimentado por uma bateria de 9 volts e possui uma chave liga/desliga. Testei todas as conexões e ajustei o código conforme necessário, garantindo que tudo funcionasse corretamente.
 
 \includegraphics[width=0.37\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/30.jpeg}
 
 Fig 31: Teste das placas.
 
-\section{Design da Caixa:}\label{design-da-caixa}
+\section{Design da Caixa}\label{design-da-caixa}
 
 Após garantir que o sistema elétrico e o código estavam funcionando perfeitamente, o foco seguinte foi desenvolver a parte mecânica e estética do projeto. Para começar, utilizei o MakerCase para criar a caixa nas dimensões desejadas. Em seguida, fiz ajustes estéticos, como a inclusão do logo e nome do FABLAB, além do nome GENIUS. Também foram feitas modificações mecânicas essenciais, como a criação do espaço para as teclas dos botões, a abertura para a chave liga-desliga, o posicionamento para a saída do buzzer e uma entrada para o Arduino, possibilitando futuras melhorias ou correções no código. Optei por construir a caixa em MDF. Na imagem abaixo, é possível visualizar o arquivo que gerou o modelo da caixa.
 
@@ -489,13 +466,13 @@ Com a estrutura da caixa finalizada, o próximo desafio foi projetar as teclas p
 
 Fig 33: Base para os botões.
 
-Para manter as teclas no lugar, foi necessário cria um sistema na tampa da caixa, que as teclas ficariam entre duas peças, onde ela se movimentaria, mas sem sair do lugar, na imagem a segui temos o desenho que foi feito essa peça, sendo a parte de dentro a menor é a parte de baixo, e parte maior é a parte de cima.
+Para manter as teclas no lugar, foi necessário cria um sistema na tampa da caixa, que as teclas ficariam entre duas peças, onde ela se movimentaria, mas sem sair do lugar, na imagem a segui temos o desenho que foi feito essas peças.
 
 \includegraphics[width=0.6\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/33.png}
 
 Fig 34: Tampa para as teclas.
 
-\section{Montagem Final:}\label{montagem-final}
+\section{Montagem Final}\label{montagem-final}
 
 Com todos os detalhes resolvidos, chegou o momento de montar a caixa de fato. Na estrutura vazia da caixa, foram adicionados apoios nos cantos para segurar a base dos botões, como pode ser observado na imagem a seguir.
 
@@ -515,7 +492,7 @@ Posteriormente, os botões e os LEDs com suas bases foram posicionados sobre os 
 
 Fig 37: Parte interna da caixa com os botões.
 
-Por fim, a tampa da caixa foi colocada, onde estão as teclas e a chave liga-desliga, como ilustrado na imagem final. Com todos os componentes montados, temos um jogo GENIUS funcional. A cada rodada, sequências aleatórias são apresentadas, proporcionando diversão ao usuário. A seguir, algumas imagens do produto final.
+Por fim, a tampa da caixa foi colocada, onde estão as teclas e a chave liga-desliga, como ilustrado nas imagens finais. Com todos os componentes montados, temos um jogo GENIUS funcional. A cada rodada, sequências aleatórias são apresentadas, proporcionando diversão ao usuário. A seguir, algumas imagens do produto final.
 
 \includegraphics[width=0.5\textwidth,height=\textheight]{D:/Minha pasta/Estudos/UFPA/8º Semestre - 2024.2/Tópico Especiais em Eletrônica/Aluno/Ryan TEE/37.jpg}
 
@@ -533,9 +510,9 @@ Como monitor da disciplina, também participei ativamente no desenvolvimento dos
 
 \chapter{CONCLUSÃO}\label{conclusuxe3o}
 
-A disciplina como um todo foi extremamente proveitosa, proporcionando aos alunos conhecimentos práticos sobre máquinas e ferramentas que são muito úteis na vida acadêmica e profissional. Ela permitiu sair um pouco do meio tradicional de ensino universitário, oferecendo uma experiência mais prática.
+A disciplina como um todo foi extremamente proveitosa, proporcionando aos alunos conhecimentos práticos sobre as máquinas e ferramentas do FABLAB, que agregam bastante na vida acadêmica e profissional. Ela permitiu sair um pouco do meio tradicional de ensino universitário, oferecendo uma experiência mais prática.
 
-O projeto final foi uma oportunidade única para os alunos aplicarem os conhecimentos adquiridos ao longo da disciplina e do curso como um todo. Essa prática é fundamental para estudantes prestes a se formarem, pois permite idealizar um projeto, colocá-lo em prática e vivenciar todo o processo, incluindo as dificuldades e os erros que surgem ao longo do caminho. A capacidade de resolver problemas e fazer ajustes é um conhecimento valioso que nem sempre é ensinado de maneira tradicional em sala de aula. Essa experiência é extremamente enriquecedora para os futuros engenheiros, independentemente da área de atuação que escolham seguir.
+O projeto final foi uma grande oportunidade para os alunos aplicarem os conhecimentos adquiridos ao longo da disciplina e do curso como um todo. Essa prática é fundamental para estudantes prestes a se formarem, pois permite idealizar um projeto, colocá-lo em prática e vivenciar todo o processo, incluindo as dificuldades e os erros que surgem ao longo do caminho. A capacidade de resolver problemas e fazer ajustes é um conhecimento valioso que nem sempre é ensinado de maneira tradicional em sala de aula. Essa experiência é extremamente enriquecedora para os futuros engenheiros, independentemente da área de atuação que escolham seguir.
 
   \bibliography{book.bib,packages.bib}
 
